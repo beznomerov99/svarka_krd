@@ -1,0 +1,304 @@
+/*==========================================
+            MOBILE PRICES BUTTON (hidden on desktop)
+==========================================*/
+
+.hero__prices-btn{
+    display:none;
+}
+
+/*==========================================
+            ABOUT ADAPTIVE
+==========================================*/
+
+@media(max-width:1600px){
+    .about__content{
+        gap:50px;
+    }   
+}
+
+@media(max-width:1350px){
+    .about__content{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .about__stats{
+        position:static;
+        max-width:600px;
+        margin:0 auto;
+    }
+}
+
+@media(max-width:992px){
+    .about{
+        padding:80px 0;
+    }
+
+    .about__title{
+        font-size:36px;
+    }
+
+    .about__header{
+        margin-bottom:50px;
+    }
+}
+
+@media(max-width:640px){
+    .about{
+        padding:60px 0;
+    }
+
+    .about__title{
+        font-size:28px;
+    }
+
+    .about__subtitle{
+        font-size:16px;
+    }
+
+    .about__header{
+        margin-bottom:40px;
+    }
+
+    .about__stats{
+        grid-template-columns:1fr 1fr;
+        gap:16px;
+    }
+
+    .about__stat{
+        padding:28px 20px;
+    }
+
+    .about__stat-number{
+        font-size:32px;
+    }
+
+    .about__stat-label{
+        font-size:14px;
+    }
+
+    .about__feature{
+        padding:16px 18px;
+    }
+
+    .about__feature-icon{
+        width:40px;
+        height:40px;
+        font-size:22px;
+    }
+
+    .about__feature h4{
+        font-size:15px;
+    }
+
+    .about__feature p{
+        font-size:13px;
+    }
+
+    .about__text p{
+        font-size:15px;
+    }
+}
+
+/*==========================================
+            CONTACTS ADAPTIVE
+==========================================*/
+
+@media(max-width:1350px){
+    .contacts__grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:992px){
+    .contacts{
+        padding:80px 0;
+    }
+
+    .contacts__title{
+        font-size:36px;
+    }
+
+    .contacts__grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contacts__cta{
+        padding:35px 25px;
+    }
+
+    .contacts__cta h3{
+        font-size:24px;
+    }
+}
+
+@media(max-width:640px){
+    .contacts{
+        padding:60px 0;
+    }
+
+    .contacts__title{
+        font-size:28px;
+    }
+
+    .contacts__subtitle{
+        font-size:16px;
+        margin-bottom:40px;
+    }
+
+    .contacts__grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .contact-card{
+        padding:25px 20px;
+    }
+
+    .contacts__cta{
+        padding:30px 20px;
+        margin-top:40px;
+    }
+
+    .contacts__cta h3{
+        font-size:20px;
+    }
+
+    .contacts__cta p{
+        font-size:15px;
+    }
+}
+
+/*==========================================
+            HEADER & HERO MOBILE
+==========================================*/
+
+@media(max-width:992px){
+
+    /* 1. Hide the "Связаться" button */
+    .header__right .btn{
+        display:none;
+    }
+
+    /* 2. Center the logo in the header */
+    .header__wrapper{
+        justify-content:center;
+    }
+
+    .logo{
+        transform:translateY(0);
+    }
+
+    /* 3. Show the prices button and style it */
+    .hero__prices-btn{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+
+        width:100%;
+        max-width:320px;
+        height:54px;
+
+        margin:30px auto 0;
+
+        background:#b91c1c;
+        border:none;
+        border-radius:8px;
+
+        font-family:"Inter",sans-serif;
+        font-size:16px;
+        font-weight:700;
+        color:#fff;
+        text-transform:uppercase;
+        letter-spacing:1px;
+
+        cursor:pointer;
+        transition:.3s;
+    }
+
+    .hero__prices-btn:hover{
+        background:#d32525;
+    }
+
+    .hero__prices-btn:active{
+        transform:scale(.97);
+    }
+
+    /* 4. Center hero content on mobile */
+    .hero__content{
+        max-width:100%;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero p{
+        width:100%;
+        text-align:center;
+    }
+
+    /* 5. White color for subtitle and paragraph on mobile */
+    .hero .subtitle,
+    .hero p{
+        color:#ffffff;
+    }
+
+}
+
+/*==========================================
+            CARD PRICES AUTO-SHOW ON SCROLL (mobile only)
+==========================================*/
+
+/* On mobile, prices appear when card comes into viewport (no hover needed) */
+@media(max-width:992px){
+    .card__price{
+        opacity:0;
+        transform:translateY(10px);
+        transition:opacity .5s ease,transform .5s ease;
+    }
+
+    .card__price.visible{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+    /* Override desktop hover — on mobile hover doesn't work */
+    .card:hover .card__price{
+        opacity:inherit;
+        transform:inherit;
+    }
+}
+
+/*==========================================
+            PRICES MODAL MOBILE (1 column)
+==========================================*/
+
+@media(max-width:640px){
+
+    .modal__body{
+        padding:40px 20px 30px;
+        margin:10px;
+        max-height:85vh;
+    }
+
+    .modal__title{
+        font-size:26px;
+    }
+
+    .modal__subtitle{
+        font-size:15px;
+        margin-bottom:30px;
+    }
+
+    .prices{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .price-card{
+        padding:22px 20px;
+    }
+
+}
+

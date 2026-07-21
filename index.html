@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Сварочные и малярные работы по доступным ценам</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header__wrapper">
+
+                <a href="#" class="logo">
+                    <img src="images/headerlogo.png" alt="">
+                </a>
+
+                <nav class="nav">
+
+                    <a href="#services">УСЛУГИ</a>
+                    <a href="https://vk.ru/id824534366" target="_blank">НАШИ РАБОТЫ</a>
+                    <a href="#prices">ЦЕНЫ</a>
+                    <a href="#about">О НАС</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
+
+                </nav>
+
+                <div class="header__right">
+
+                    <div class="phone">
+
+                        <a href="tel:88005553535">
+                            8 800 555-35-35
+                        </a>
+
+                        <span>
+                            Ежедневно с 9:00 до 21:00
+                        </span>
+
+                    </div>
+
+                    <a href="https://vk.ru/im/convo/824534366?tab=all" class="btn" target="_blank">
+                        Связаться
+                    </a>
+
+                </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <img src="images/lights.png" class="lights" alt="">
+            <img src="images/hero-car.png" class="hero_car" alt="">
+
+            <div class="overlay"></div>
+
+            <div class="container">
+
+                <div class="hero__content">
+
+                    <span class="subtitle">
+                        ПРОФЕССИОНАЛЬНЫЕ УСЛУГИ
+                    </span>
+
+                    <h1>
+                        СВАРКА <span class="accent-letter">И</span> ПОКРАСКА
+                        <br>
+                        АВТОМОБИЛЕЙ
+                    </h1>
+
+                    <p>
+                        Бюджетная переварка днища и порогов, а так же покраска деталей по хорошей цене!
+                    </p>
+
+                    <button class="hero__prices-btn mobile-only" onclick="openPricesModal()">
+                        ЦЕНЫ
+                    </button>
+
+                    <br>
+
+                    <div class="advantages">
+
+                        <div class="advantage">
+
+                            <img src="images/garant.png" alt="">
+
+                            <div>
+
+                            
+                            </div>
+
+                    </div>
+
+            </div>
+
+        </section>
+
+        <section class="services" id="services">
+
+            <div class="container">
+
+                <h2 class="section__title services__title">УСЛУГИ</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <img src="images/rem.png" alt="">
+
+                        <div class="card_body">
+
+                            <h3>
+                                СВАРОЧНЫЕ РАБОТЫ
+                            </h3>
+
+                            <p>
+                                Переварка днища, порогов и других элементов
+                            </p>
+
+                            <span class="card__price">от 15 000 ₽</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card">
+
+                        <img src="images/priora.png" alt="">
+
+                        <div class="card_body">
+
+                            <h3>
+                                ПОКРАСОЧНЫЕ РАБОТЫ
+                            </h3>
+
+                            <p>
+                                Бюджетная покраска деталей и кузова под ключ
+                            </p>
+
+                            <span class="card__price">от 5 000 ₽</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card">
+
+                        <img src="images/vaz2109.png" alt="">
+
+                        <div class="card_body">
+
+                            <h3>
+                                ПОДГОТОВКА К ПОКРАСКЕ
+                            </h3>
+
+                            <p>
+                                Полный цикл подготовки поверхности
+                            </p>
+
+                            <span class="card__price">от 1 500 ₽</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card">
+
+                        <img src="images/polirovka.png" alt="">
+
+                        <div class="card_body">
+
+                            <h3>
+                                ПОЛИРОВКА КУЗОВА
+                            </h3>
+
+                            <p>
+                                Устранение царапин и восстановление блеска
+                            </p>
+
+                            <span class="card__price">от 1 500 ₽</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card">
+
+                        <img src="images/bamper.png" alt="">
+
+                        <div class="card_body">
+
+                            <h3>
+                                ЗАМЕНА ДЕТАЛЕЙ
+                            </h3>
+
+                            <p>
+                                Установка оригинальных деталей
+                            </p>
+
+                            <span class="card__price">от 2 000 ₽</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Секция О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__header">
+                    <h2 class="about__title">О НАС</h2>
+
+
+
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                        Мы представляем полный спектор услуг, от сварки до полировки или покраски. 
+                        Каждый клиент, посетивший наш сервис, получает индивидуальный подход и качественное обслуживание. 
+                        
+                        </p>
+                        <p>
+                        Используем только качественные материалы. Каждый этап работы происходит без спешки, чтобы гарантировать безупречный результат.
+                        </p>
+                        <div class="about__features">
+                            
+                
+                            </div>
+                    </div>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number">5+</span>
+                            <span class="about__stat-label">Лет опыта</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">100+</span>
+                            <span class="about__stat-label">Автомобилей</span>
+                        </div>
+                    </div>
+            </div>
+    </section>
+
+    <!-- Секция Контакты -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <h2 class="contacts__title">КОНТАКТЫ</h2>
+                <p class="contacts__subtitle">Свяжитесь с нами удобным для вас способом</p>
+
+                <div class="contacts__grid">
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d92525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card__title">Телефон</h3>
+                        <a href="tel:88005553535" class="contact-card__link">8 800 555-35-35</a>
+                        <p class="contact-card__desc">Ежедневно с 9:00 до 21:00</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d92525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card__title">Адрес</h3>
+                        <a href="https://2gis.ru/novorossiysk/geo/10415209793526590/38.112134,45.140983" target="_blank" class="contact-card__link">ст. Троицкая, Таманская 68</a>
+                        <p class="contact-card__desc">Краснодарский край, Крымский район</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 48 48" fill="#d92525">
+                                <path d="M45.879 8.027c.551 0 .795.274.795.822 0 .3-.183.671-.55 1.112-2.74 3.2-4.956 5.643-6.647 7.33-.823.823-1.371 1.462-1.646 1.92s-.274 1.005-.274 1.462c0 .091.046.228.137.411.091.183.228.457.411.822l.274.274c1.646 2.193 3.75 4.937 6.31 8.232.365.456.548.914.548 1.371 0 .548-.274.914-.822 1.097l-.137.137h-6.035c-.822 0-1.371-.274-1.646-.822-.365-.639-.822-1.371-1.371-2.194-.548-.822-1.097-1.646-1.646-2.469-.548-.822-1.234-1.6-2.056-2.33-.274-.274-.548-.457-.822-.548-.182-.091-.365-.137-.548-.137-.365 0-.639.137-.822.411s-.274.685-.274 1.234v4.661c0 .548-.183.914-.548 1.097-.183.183-.64.274-1.372.274h-3.839c-2.74 0-5.48-1.279-8.232-3.838-2.74-2.558-5.023-5.938-6.852-10.142C6.37 15.585 4.906 11.198 3.822 6.626c-.183-.548 0-.914.548-1.097l.137-.137h6.31c.548 0 .914.183 1.097.548.183.365.365.822.548 1.371.548 1.828 1.234 3.68 2.056 5.557.822 1.879 1.737 3.566 2.742 5.06.548.822 1.097 1.463 1.646 1.92.548.457 1.005.686 1.371.686.365 0 .639-.137.822-.411.183-.274.274-.731.274-1.371V10.82c-.091-.548-.183-.914-.274-1.097-.091-.182-.274-.365-.548-.548-.183-.091-.274-.228-.274-.411 0-.365.228-.548.686-.548h5.756c.548 0 .914.183 1.097.548.183.365.274.914.274 1.646v8.645c0 .365.091.64.274.822.183.183.365.274.548.274.548 0 1.097-.274 1.646-.822.548-.548 1.097-1.279 1.646-2.194 1.097-1.646 2.056-3.657 2.88-6.035.183-.548.365-1.005.548-1.371.183-.365.457-.548.822-.548h5.756z"/>
+                            </svg>
+                        </div>
+                        <h3 class="contact-card__title">VKontakte</h3>
+                        <a href="https://vk.ru/im/convo/824534366?tab=all" target="_blank" class="contact-card__link">Написать в VK</a>
+                        <p class="contact-card__desc">Быстрый ответ в рабочее время</p>
+                    </div>
+
+                </div>
+
+                <div class="contacts__cta">
+                    <h3>Не нашли что искали?</h3>
+                    <p>Свяжитесь с нами — мы ответим на все вопросы</p>
+                    <a href="https://vk.ru/im/convo/824534366?tab=all" class="btn" target="_blank">Связаться</a>
+                </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно Цены -->
+    <div class="modal" id="pricesModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <button class="modal__close" id="modalClose">&times;</button>
+            <h2 class="modal__title">НАШИ ЦЕНЫ</h2>
+            <p class="modal__subtitle">Актуальные цены на все виды работ</p>
+
+            <div class="prices">
+
+                <div class="price-card">
+                    <h3 class="price-card__title">СВАРОЧНЫЕ РАБОТЫ</h3>
+                    <ul class="price-card__list">
+                        <li>
+                            <span>Переварка днища (ВАЗ)</span>
+                            <span class="price">от 15 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Переварка порогов (1 шт)</span>
+                            <span class="price">от 3 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Переварка арок</span>
+                            <span class="price">от 4 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Усилители порогов</span>
+                            <span class="price">от 2 500 ₽</span>
+                        </li>
+                        <li>
+                            <span>Лонжероны</span>
+                            <span class="price">от 5 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Телевизор</span>
+                            <span class="price">от 10 000 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="price-card">
+                    <h3 class="price-card__title">ПОКРАСОЧНЫЕ РАБОТЫ</h3>
+                    <ul class="price-card__list">
+                        <li>
+                            <span>Покраска детали (бампер, крыло)</span>
+                            <span class="price">от 5 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Покраска кузова под ключ</span>
+                            <span class="price">от 40 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Частичная покраска</span>
+                            <span class="price">от 8 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Нанесение антигравия</span>
+                            <span class="price">от 3 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Покраска дисков (1 шт)</span>
+                            <span class="price">от 2 000 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="price-card">
+                    <h3 class="price-card__title">ПОДГОТОВКА К ПОКРАСКЕ</h3>
+                    <ul class="price-card__list">
+                        <li>
+                            <span>Шпаклёвка детали</span>
+                            <span class="price">от 3 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Грунтовка детали</span>
+                            <span class="price">от 2 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Зачистка поверхности</span>
+                            <span class="price">от 1 500 ₽</span>
+                        </li>
+                        <li>
+                            <span>Полный цикл подготовки</span>
+                            <span class="price">от 7 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Удаление ржавчины</span>
+                            <span class="price">от 2 000 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3 class="price-card__title">ПОЛИРОВКА КУЗОВА</h3>
+                    <ul class="price-card__list">
+                        <li>
+                            <span>Полировка одной детали</span>
+                            <span class="price">от 1 500 ₽</span>
+                        </li>
+                        <li>
+                            <span>Полировка всего кузова</span>
+                            <span class="price">от 8 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Восстановительная полировка</span>
+                            <span class="price">от 10 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Защитная полировка</span>
+                            <span class="price">от 6 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Удаление голограмм</span>
+                            <span class="price">от 3 000 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="price-card">
+                    <h3 class="price-card__title">ЗАМЕНА ДЕТАЛЕЙ</h3>
+                    <ul class="price-card__list">
+                        <li>
+                            <span>Замена крыла</span>
+                            <span class="price">от 2 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Замена двери</span>
+                            <span class="price">от 3 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Замена капота</span>
+                            <span class="price">от 3 000 ₽</span>
+                        </li>
+                        <li>
+                            <span>Замена порога</span>
+                            <span class="price">от 2 500 ₽</span>
+                        </li>
+                        <li>
+                            <span>Замена бампера</span>
+                            <span class="price">от 2 000 ₽</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="modal__footer">
+                <p>* Цены указаны ориентировочные. Точная стоимость рассчитывается после осмотра автомобиля.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
